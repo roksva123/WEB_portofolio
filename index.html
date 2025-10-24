@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Aufa</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="logo">Aufa</div>
+      <ul>
+        <li><a href="#beranda">Beranda</a></li>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#teknologi">Teknologi</a></li>
+        <li><a href="#pengalaman">Pengalaman</a></li>
+        <li><a href="#proyek">Proyek</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+
+    <!-- LANDING PAGE -->
+    <section id="beranda" class="hero">
+      <div class="hero-text">
+        <h1>Halo, saya Aufa</h1>
+        <p>Saya sekolah di SMKN 2 Kota Bekasi</p>
+        <p>Jurusan Rekayasa Perangkat Lunak (RPL)</p>
+        <button id="scrollBtn">Tentang Saya</button>
+      </div>
+    </section>
+
+    <!-- TENTANG SAYA -->
+    <section id="tentang" class="section">
+      <h2 data-aos="fade-up">Tentang Saya</h2>
+      <p>
+        Saya suka belajar hal baru tentang teknologi, terutama pemrograman dan desain web.
+        Saat ini saya sedang fokus mengembangkan kemampuan di bidang back end dan API
+        menggunakan <strong>Python</strong> dan <strong>Django</strong>.
+      </p>
+    </section>
+
+
+    <!-- PENGALAMAN -->
+    <section id="pengalaman" class="section">
+      <h2>Pengalaman</h2>
+      <p>
+        Saya pernah mengikuti Lomba Tangible World CUP dan AI HACKTHON,<br />
+        Web Tes IQ (Machine Learning untuk analisis hasil) <br />
+        Web Cek Pangan (harga pasar real-time) <br />
+        Web Kelas (melihat guru, PR, kas, dan data murid)
+      </p>
+    </section>
+
+    <!-- PROYEK -->
+    <section id="proyek" class="section">
+      <h2>Proyek</h2>
+      <div class="project-container">
+        <div class="project-card">
+          <img src="asset/img/1.png" alt="Web Tes IQ" />
+          <h3>Web Tes IQ</h3>
+          <p>Website interaktif untuk tes IQ berbasis web dengan analisis hasil otomatis.</p>
+        </div>
+
+        <div class="project-card">
+          <img src="asset/img/2.png" alt="Web Cek Pangan" />
+          <h3>Web Cek Pangan</h3>
+          <p>Website untuk memantau harga pangan secara real-time per kota.</p>
+        </div>
+
+        <div class="project-card">
+          <img src="asset/img/4.png" alt="Web Kelas" />
+          <h3>Web Kelas</h3>
+          <p>Aplikasi manajemen kelas untuk melihat guru, PR, kas, dan data siswa.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- KONTAK -->
+    <section id="kontak" class="contact">
+      <h2>Kontak Saya</h2>
+
+      <div class="contact-wrapper">
+        <form
+          id="contactForm"
+          action="https://formspree.io/f/xvgwejrz"
+          method="POST"
+        >
+          <input type="text" name="nama" placeholder="Nama Lengkap" required />
+          <input type="email" name="email" placeholder="Alamat Email" required />
+          <textarea name="message" placeholder="Tulis pesan kamu di sini..." required></textarea>
+          <button type="submit">Kirim Pesan</button>
+          <p id="formStatus" class="status-message"></p>
+        </form>
+
+        <div class="contact-info">
+          <h3>Hubungi Saya</h3>
+          <p><strong>Email:</strong> aufa49185@gmail.com</p>
+          <p><strong>Nomor:</strong> +62 085175249674</p>
+          <p>
+            <strong>Instagram:</strong>
+            <a href="https://www.instagram.com/rokva_a?igsh=MW14aHF0cmplMnQwYg==" target="_blank">@rokva_a</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2024 AUFA</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
