@@ -10,8 +10,9 @@ body {
   background: url("asset/img/aufa.jpg") no-repeat center center fixed;
   background-size: cover;
   font-family: "Space Grotesk", sans-serif;
-  font-size: 18px; /* 🔹 Ukuran dasar teks diperbesar */
+  font-size: 18px;
   line-height: 1.6;
+  padding-top: 100px; /* 🔧 jarak biar gak nabrak navbar */
 }
 
 /* NAVBAR */
@@ -26,10 +27,11 @@ body {
   align-items: center;
   padding: 18px 50px;
   z-index: 1000;
+  transition: background 0.3s, box-shadow 0.3s;
 }
 
 .navbar .logo {
-  font-size: 32px; /* 🔹 lebih besar */
+  font-size: 32px;
   font-weight: 700;
 }
 
@@ -43,7 +45,12 @@ body {
   text-decoration: none;
   color: black;
   font-weight: 600;
-  font-size: 20px; /* 🔹 link navbar lebih besar */
+  font-size: 20px;
+  transition: 0.2s;
+}
+
+.navbar ul li a:hover {
+  color: #333;
 }
 
 .menu-toggle {
@@ -63,7 +70,7 @@ body {
 }
 
 .hero h1 {
-  font-size: 4.5rem; /* 🔹 diperbesar */
+  font-size: 4.5rem;
   margin-bottom: 25px;
   font-weight: 700;
 }
@@ -79,7 +86,7 @@ body {
   color: white;
   border: none;
   cursor: pointer;
-  font-size: 1.3rem; /* 🔹 tombol lebih besar */
+  font-size: 1.3rem;
   border-radius: 8px;
   transition: all 0.3s ease;
 }
@@ -90,7 +97,7 @@ body {
   border: 2px solid black;
 }
 
-/* SECTION STYLE */
+/* SECTION */
 .section {
   min-height: 100vh;
   display: flex;
@@ -109,7 +116,7 @@ body {
 }
 
 .section p {
-  font-size: 1.5rem; /* 🔹 teks isi lebih besar */
+  font-size: 1.5rem;
   max-width: 900px;
 }
 
@@ -181,7 +188,7 @@ body {
   backdrop-filter: blur(8px);
 }
 
-/* FORM STYLE */
+/* FORM */
 #contactForm {
   display: flex;
   flex-direction: column;
@@ -212,12 +219,6 @@ body {
   background: white;
   color: black;
   border: 2px solid black;
-}
-
-.status-message {
-  margin-top: 15px;
-  font-size: 1.2rem;
-  font-weight: 500;
 }
 
 /* INFO KONTAK */
@@ -256,8 +257,12 @@ footer {
   font-size: 1.1rem;
 }
 
-/* === RESPONSIVE DESIGN === */
+/* === RESPONSIVE === */
 @media (max-width: 900px) {
+  body {
+    padding-top: 85px;
+  }
+
   .navbar ul {
     display: none;
     flex-direction: column;
@@ -269,6 +274,7 @@ footer {
     padding: 15px;
     border-radius: 10px;
     text-align: right;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   }
 
   .navbar ul.active {
@@ -323,26 +329,5 @@ footer {
 @media (max-width: 500px) {
   body {
     font-size: 16px;
-  }
-
-  .hero h1 {
-    font-size: 2.4rem;
-  }
-
-  .hero p {
-    font-size: 1.1rem;
-  }
-
-  .section p {
-    font-size: 1.2rem;
-  }
-
-  #contactForm input,
-  #contactForm textarea {
-    font-size: 1rem;
-  }
-
-  .contact-info p {
-    font-size: 1.1rem;
   }
 }
