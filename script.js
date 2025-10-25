@@ -1,4 +1,4 @@
-// AOS animasi aktif
+// AOS
 AOS.init();
 
 // Scroll ke bagian "Tentang Saya"
@@ -16,6 +16,14 @@ window.addEventListener("scroll", () => {
     navbar.style.background = "rgba(255,255,255,0.6)";
     navbar.style.boxShadow = "none";
   }
+});
+
+// Menu toggle mobile
+const menuToggle = document.getElementById("menuToggle");
+const navMenu = document.getElementById("navMenu");
+
+menuToggle.addEventListener("click", () => {
+  navMenu.classList.toggle("active");
 });
 
 // Formspree status
@@ -41,7 +49,7 @@ form.addEventListener("submit", async (e) => {
       statusMsg.textContent = "❌ Terjadi kesalahan, coba lagi!";
       statusMsg.style.color = "red";
     }
-  } catch (error) {
+  } catch {
     statusMsg.textContent = "⚠️ Gagal mengirim pesan.";
     statusMsg.style.color = "red";
   }

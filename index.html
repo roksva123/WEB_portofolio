@@ -3,18 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <logo rel="icon" href="asset/img/d63a7be5ca02b1951cd06541e691f0f3.jpg" type="image/png" />
+    <link rel="icon" href="asset/img/d63a7be5ca02b1951cd06541e691f0f3.jpg" type="image/png" />
     <title>Portofolio Aufa</title>
     <link rel="stylesheet" href="style.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
 
   <body>
     <!-- NAVBAR -->
     <nav class="navbar">
       <div class="logo">Aufa</div>
-      <ul>
+      <div class="menu-toggle" id="menuToggle">☰</div>
+      <ul id="navMenu">
         <li><a href="#beranda">Beranda</a></li>
         <li><a href="#tentang">Tentang</a></li>
         <li><a href="#pengalaman">Pengalaman</a></li>
@@ -26,28 +26,27 @@
     <!-- LANDING PAGE -->
     <section id="beranda" class="hero">
       <div class="hero-text">
-        <h1 data-aos="fade-up" delay="50">Halo, saya Aufa</h1>
-        <p data-aos="fade-up" delay="150">Saya sekolah di SMKN 2 Kota Bekasi</p>
-        <p data-aos="fade-up" delay="200">Jurusan Rekayasa Perangkat Lunak (RPL)</p>
-        <button id="scrollBtn" data-aos="fade-up" delay="200">Tentang Saya</button>
+        <h1 data-aos="fade-up">Halo, saya Aufa</h1>
+        <p data-aos="fade-up" data-aos-delay="100">Saya sekolah di SMKN 2 Kota Bekasi</p>
+        <p data-aos="fade-up" data-aos-delay="150">Jurusan Rekayasa Perangkat Lunak (RPL)</p>
+        <button id="scrollBtn" data-aos="fade-up" data-aos-delay="200">Tentang Saya</button>
       </div>
     </section>
 
     <!-- TENTANG SAYA -->
     <section id="tentang" class="section">
-      <h2 data-aos="fade-up" delay="50">Tentang Saya</h2>
-      <p data-aos="fade-up" delay="50">
+      <h2 data-aos="fade-up">Tentang Saya</h2>
+      <p data-aos="fade-up">
         Saya suka belajar hal baru tentang teknologi, terutama pemrograman dan desain web.
         Saat ini saya sedang fokus mengembangkan kemampuan di bidang back end dan API
         menggunakan <strong>Python</strong> dan <strong>Django</strong>.
       </p>
     </section>
 
-
     <!-- PENGALAMAN -->
     <section id="pengalaman" class="section">
-      <h2 data-aos="fade-up" delay="50">Pengalaman</h2>
-      <p data-aos="fade-up" delay="50">
+      <h2 data-aos="fade-up">Pengalaman</h2>
+      <p data-aos="fade-up">
         Saya pernah mengikuti Lomba Tangible World CUP dan AI HACKTHON,<br />
         Web Tes IQ (Machine Learning untuk analisis hasil) <br />
         Web Cek Pangan (harga pasar real-time) <br />
@@ -57,22 +56,22 @@
 
     <!-- PROYEK -->
     <section id="proyek" class="section">
-      <h2 data-aos="fade-up" delay="50">Proyek</h2>
+      <h2 data-aos="fade-up">Proyek</h2>
       <div class="project-container">
-        <div class="project-card" data-aos="flip-right" delay="100">
-          <img data-aos="flip-right" delay="100" src="asset/img/1.png" alt="Web Tes IQ" />
+        <div class="project-card" data-aos="flip-right">
+          <img src="asset/img/1.png" alt="Web Tes IQ" />
           <h3>Web Tes IQ</h3>
           <p>Website interaktif untuk tes IQ berbasis web dengan analisis hasil otomatis.</p>
         </div>
 
-        <div class="project-card" data-aos="flip-right" delay="100">
-          <img data-aos="flip-right" delay="100" src="asset/img/2.png" alt="Web Cek Pangan" />
+        <div class="project-card" data-aos="flip-right">
+          <img src="asset/img/2.png" alt="Web Cek Pangan" />
           <h3>Web Cek Pangan</h3>
           <p>Website untuk memantau harga pangan secara real-time per kota.</p>
         </div>
 
-        <div class="project-card" data-aos="flip-right" delay="100">
-          <img data-aos="flip-right" delay="100" src="asset/img/4.png" alt="Web Kelas" />
+        <div class="project-card" data-aos="flip-right">
+          <img src="asset/img/4.png" alt="Web Kelas" />
           <h3>Web Kelas</h3>
           <p>Aplikasi manajemen kelas untuk melihat guru, PR, kas, dan data siswa.</p>
         </div>
@@ -82,13 +81,8 @@
     <!-- KONTAK -->
     <section id="kontak" class="contact">
       <h2>Kontak Saya</h2>
-
       <div class="contact-wrapper">
-        <form
-          id="contactForm"
-          action="https://formspree.io/f/xvgwejrz"
-          method="POST"
-        >
+        <form id="contactForm" action="https://formspree.io/f/xvgwejrz" method="POST">
           <input type="text" name="nama" placeholder="Nama Lengkap" required />
           <input type="email" name="email" placeholder="Alamat Email" required />
           <textarea name="message" placeholder="Tulis pesan kamu di sini..." required></textarea>
@@ -99,10 +93,10 @@
         <div class="contact-info">
           <h3>Hubungi Saya</h3>
           <p><strong>Email:</strong> aufa49185@gmail.com</p>
-          <p><strong>Nomor:</strong> +62 085175249674</p>
+          <p><strong>Nomor:</strong> +62 851-7524-9674</p>
           <p>
             <strong>Instagram:</strong>
-            <a href="https://www.instagram.com/rokva_a?igsh=MW14aHF0cmplMnQwYg==" target="_blank">@rokva_a</a>
+            <a href="https://www.instagram.com/rokva_a" target="_blank">@rokva_a</a>
           </p>
         </div>
       </div>
@@ -112,6 +106,7 @@
       <p>© 2024 AUFA</p>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
