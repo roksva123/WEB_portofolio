@@ -1,3 +1,4 @@
+// AOS
 AOS.init();
 
 // Scroll ke bagian "Tentang Saya"
@@ -25,9 +26,11 @@ menuToggle.addEventListener("click", () => {
   navMenu.classList.toggle("active");
 });
 
-// Tutup menu otomatis saat link diklik
-document.querySelectorAll("#navMenu a").forEach(link => {
-  link.addEventListener("click", () => navMenu.classList.remove("active"));
+// Tutup menu saat klik link
+navMenu.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", () => {
+    navMenu.classList.remove("active");
+  });
 });
 
 // Formspree status

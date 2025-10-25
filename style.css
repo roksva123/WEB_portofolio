@@ -12,7 +12,6 @@ body {
   font-family: "Space Grotesk", sans-serif;
   font-size: 18px;
   line-height: 1.6;
-  padding-top: 100px; /* 🔧 jarak biar gak nabrak navbar */
 }
 
 /* NAVBAR */
@@ -27,7 +26,6 @@ body {
   align-items: center;
   padding: 18px 50px;
   z-index: 1000;
-  transition: background 0.3s, box-shadow 0.3s;
 }
 
 .navbar .logo {
@@ -46,11 +44,6 @@ body {
   color: black;
   font-weight: 600;
   font-size: 20px;
-  transition: 0.2s;
-}
-
-.navbar ul li a:hover {
-  color: #333;
 }
 
 .menu-toggle {
@@ -221,7 +214,13 @@ body {
   border: 2px solid black;
 }
 
-/* INFO KONTAK */
+.status-message {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* CONTACT INFO */
 .contact-info {
   text-align: left;
   max-width: 400px;
@@ -257,12 +256,8 @@ footer {
   font-size: 1.1rem;
 }
 
-/* === RESPONSIVE === */
+/* RESPONSIVE */
 @media (max-width: 900px) {
-  body {
-    padding-top: 85px;
-  }
-
   .navbar ul {
     display: none;
     flex-direction: column;
@@ -274,7 +269,6 @@ footer {
     padding: 15px;
     border-radius: 10px;
     text-align: right;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   }
 
   .navbar ul.active {
@@ -289,27 +283,16 @@ footer {
     justify-content: center;
     text-align: center;
     padding: 0 5%;
+    padding-top: 120px; /* FIX NABRAK NAVBAR */
+    background-attachment: scroll;
   }
 
-  .hero h1 {
-    font-size: 3rem;
-  }
+  .hero h1 { font-size: 3rem; }
+  .hero p { font-size: 1.3rem; }
+  .hero button { font-size: 1.2rem; }
 
-  .hero p {
-    font-size: 1.3rem;
-  }
-
-  .hero button {
-    font-size: 1.2rem;
-  }
-
-  .section h2 {
-    font-size: 2.4rem;
-  }
-
-  .section p {
-    font-size: 1.3rem;
-  }
+  .section h2 { font-size: 2.4rem; }
+  .section p { font-size: 1.3rem; }
 
   .project-container {
     flex-direction: column;
@@ -327,7 +310,21 @@ footer {
 }
 
 @media (max-width: 500px) {
-  body {
-    font-size: 16px;
+  body { font-size: 16px; }
+
+  .hero {
+    padding-top: 140px; /* LEBIH TURUN */
+  }
+
+  .hero h1 { font-size: 2.4rem; }
+  .hero p { font-size: 1.1rem; }
+  .section p { font-size: 1.2rem; }
+
+  #contactForm input, #contactForm textarea {
+    font-size: 1rem;
+  }
+
+  .contact-info p {
+    font-size: 1.1rem;
   }
 }
