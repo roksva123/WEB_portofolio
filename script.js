@@ -18,20 +18,21 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// Menu toggle mobile
-const menuToggle = document.getElementById("menuToggle");
-const navMenu = document.getElementById("navMenu");
+// Toggle menu burger
+const menuToggle = document.querySelector(".menu-toggle");
+const navMenu = document.querySelector(".navbar ul");
 
 menuToggle.addEventListener("click", () => {
   navMenu.classList.toggle("active");
 });
 
 // Tutup menu saat klik link
-navMenu.querySelectorAll("a").forEach(link => {
+document.querySelectorAll(".navbar ul li a").forEach(link => {
   link.addEventListener("click", () => {
     navMenu.classList.remove("active");
   });
 });
+
 
 // Formspree status
 const form = document.getElementById("contactForm");
